@@ -43,9 +43,7 @@ const init_phones = ["BKF"],            // Optional. Which graphs to display on 
 
 // Specify which targets to display
 const targets = [
-    { type:"Neutral",    files:["Diffuse Field","Etymotic","IEF Neutral 2020","IEF Neutral 2023"] },
-    { type:"Reviewer",   files:["Antdroid","Bad Guy","Banbeucmas","Crinacle","Precogvision","Super Review"] },
-    { type:"Preference", files:["Harman","Rtings","Sonarworks"] }
+    { type:"The",    files:["IEF Neutral 2020","IEF Neutral 2023","Diffuse Field","JM-1 Crinacle"] },
 ];
 
 
