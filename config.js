@@ -13,13 +13,9 @@ const init_phones = ["BKF"],            // Optional. Which graphs to display on 
       alt_header_new_tab = true,                    // Clicking alt_header links opens in new tab
       alt_tutorial = false,                         // Display a configurable frequency response guide below the graph
       alt_augment = false,                          // Display augment card in phone list, e.g. review sore, shop link
-      site_url = 'graph.html',                      // URL of your graph "homepage"
+      site_url = 'index.html',                      // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-<<<<<<< HEAD
-      watermark_text = "1",                 // Optional. Watermark appears behind graphs
-=======
       watermark_text = "CrinGraph",                 // Optional. Watermark appears behind graphs
->>>>>>> parent of 0045083 (change)
       watermark_image_url = "cringraph-logo.svg",   // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
       page_title = "CrinGraph",                     // Optional. Appended to the page title if share URLs are enabled
