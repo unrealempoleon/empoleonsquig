@@ -1,6 +1,6 @@
 // Configuration options
 const init_phones = ["BKF"],            // Optional. Which graphs to display on initial load. Note: Share URLs will override this set
-      DIR = "data/",                                // Directory where graph files are stored
+      DIR = "squig/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
       default_norm_db = 60,                         // Sets default dB normalization point
@@ -13,26 +13,26 @@ const init_phones = ["BKF"],            // Optional. Which graphs to display on 
       alt_header_new_tab = true,                    // Clicking alt_header links opens in new tab
       alt_tutorial = false,                         // Display a configurable frequency response guide below the graph
       alt_augment = false,                          // Display augment card in phone list, e.g. review sore, shop link
-      site_url = 'graph.html',                      // URL of your graph "homepage"
+      site_url = 'index.html',                      // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "CrinGraph",                 // Optional. Watermark appears behind graphs
-      watermark_image_url = "cringraph-logo.svg",   // Optional. If image file is in same directory as config, can be just the filename
+      watermark_text = "",                 // Optional. Watermark appears behind graphs
+      watermark_image_url = "",   // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
-      page_title = "CrinGraph",                     // Optional. Appended to the page title if share URLs are enabled
+      page_title = "empoleonqsuig",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = false,                          // If true, displays specified HTML at the bottom of the page. Configure further below
-      externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
+      externalLinksBar = false,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       restricted = false,                           // Enables restricted mode. More restricted options below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
       headerHeight = '0px',                         // Optional. If expandable=true, determines how much space to leave for the parent page header
       themingEnabled = true,                        // Enable user-toggleable themes (dark mode, contrast mode)
-      targetDashed = false,                         // If true, makes target curves dashed lines
+      targetDashed = true,                         // If true, makes target curves dashed lines
       targetColorCustom = false,                    // If false, targets appear as a random gray value. Can replace with a fixed color value to make all targets the specified color, e.g. "black"
       targetRestoreLastUsed = false,				// Restore user's last-used target settings on load
       labelsPosition = "default",                   // Up to four labels will be grouped in a specified corner. Accepts "top-left," bottom-left," "bottom-right," and "default"
       stickyLabels = true,                          // "Sticky" labels 
-      analyticsEnabled = true,                     // Enables Google Analytics 4 measurement of site usage
+      analyticsEnabled = false,                     // Enables Google Analytics 4 measurement of site usage
       exportableGraphs = true,                      // Enables export graph button
       extraEnabled = true,                          // Enable extra features
       extraUploadEnabled = true,                    // Enable upload function
@@ -43,9 +43,7 @@ const init_phones = ["BKF"],            // Optional. Which graphs to display on 
 
 // Specify which targets to display
 const targets = [
-    { type:"Neutral",    files:["Diffuse Field","Etymotic","Free Field","Innerfidelity ID"] },
-    { type:"Reviewer",   files:["Antdroid","Bad Guy","Banbeucmas","Crinacle","Precogvision","Super Review"] },
-    { type:"Preference", files:["Harman","Rtings","Sonarworks"] }
+    { type:"Targets",    files:["IEF Neutral 2020","IEF Neutral 2023","Diffuse Field","JM-1 Crinacle"] },
 ];
 
 
